@@ -1,0 +1,96 @@
+:root {
+  --quiz-bg: linear-gradient(135deg, #e0e7ff 0%, #f0f9ff 100%);
+  --quiz-card-bg: #fff;
+  --quiz-primary: #2563eb;
+  --quiz-accent: #60a5fa;
+  --quiz-correct: #059669;
+  --quiz-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.quizGenBg {
+  min-height: 100vh;
+  background: var(--quiz-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.quizGenCard {
+  background: var(--quiz-card-bg);
+  border-radius: 2rem;
+  box-shadow: var(--quiz-shadow);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid var(--quiz-accent);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quizGenTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--quiz-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.quizGenForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.quizGenInput {
+  padding: 0.9rem 1.2rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--quiz-accent);
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+  background: #f8fafc;
+}
+.quizGenInput:focus {
+  border: 2px solid var(--quiz-primary);
+}
+
+.quizGenBtn {
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+.quizGenBtn:hover {
+  background: linear-gradient(90deg, #1d4ed8 0%, #38bdf8 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.quizGenList {
+  margin-top: 1.5rem;
+}
+.quizGenListItem {
+  background: #f1f5f9;
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 1px 4px 0 rgba(37, 99, 235, 0.04);
+}
+.quizGenListTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--quiz-primary);
+  margin-bottom: 0.5rem;
+}
+.quizGenListOptions {
+  padding-left: 1.5rem;
+  color: #334155;
+}

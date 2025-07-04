@@ -1,0 +1,227 @@
+
+/* Login.css - Copied from test.css for pixel-perfect login page */
+
+body.test-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d6f0ff 0%, #eaf6ff 40%, #f7fafd 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.test-clouds {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: none;
+}
+
+.test-logo {
+  position: absolute;
+  top: 32px;
+  left: 48px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  gap: 10px;
+}
+
+.test-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.95);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  max-width: 400px;
+  margin: 0 auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(10vh);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #e5e7eb;
+  backdrop-filter: blur(2px);
+}
+
+.test-icon {
+  background: linear-gradient(135deg, #eaf6ff 0%, #d6f0ff 100%);
+  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.08);
+}
+
+.test-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.test-desc {
+  color: #7b7b8b;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.test-form {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.test-input-group {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.test-input {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f7fafd;
+  color: #2563eb;
+  box-shadow: 0 1px 2px rgba(31,38,135,0.03);
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+.test-input:focus {
+  box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+}
+
+.test-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b0b0c3;
+  font-size: 1.1rem;
+}
+.test-input-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b0b0c3;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.test-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.98rem;
+  color: #7b7b8b;
+  margin-bottom: 0.2rem;
+}
+
+.test-link {
+  color: #7b7b8b;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+
+.test-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.10);
+  transition: background 0.2s;
+}
+
+.test-btn:hover {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+}
+
+.test-or {
+  margin: 1.2rem 0 0.7rem 0;
+  text-align: center;
+  color: #b0b0c3;
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+.test-or:before, .test-or:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: #e5e7eb;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.test-socials {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+.test-social-btn {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 1px 2px rgba(31,38,135,0.03);
+}
+.test-social-btn:hover {
+  border: 1.5px solid #b0b0c3;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+}
+
+@media (max-width: 480px) {
+  .test-card {
+    max-width: 98vw;
+    padding: 1.5rem 0.7rem 1.2rem 0.7rem;
+    border-radius: 18px;
+  }
+  .test-title {
+    font-size: 1.15rem;
+  }
+  .test-logo {
+    left: 18px;
+    font-size: 1rem;
+    top: 18px;
+  }
+}

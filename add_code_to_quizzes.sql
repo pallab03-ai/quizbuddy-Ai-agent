@@ -1,0 +1,2 @@
+ALTER TABLE quizzes
+ADD COLUMN code TEXT UNIQUE;

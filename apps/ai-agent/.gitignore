@@ -1,0 +1,6 @@
+# Python AI agent ignores
+.env
+venv/
+__pycache__/
+*.pyc
+*.log

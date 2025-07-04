@@ -1,0 +1,4 @@
+# Node.js backend ignores
+node_modules/
+.env
+*.log

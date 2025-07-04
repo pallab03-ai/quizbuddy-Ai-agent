@@ -1,0 +1,287 @@
+/* register.css - Minimal, pixel-perfect registration page as per provided image */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+
+.register-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d6f0ff 0%, #eaf6ff 40%, #f7fafd 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Inter', Arial, sans-serif;
+  width: 100vw;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+/* Geometric SVG background overlay */
+.register-bg-svg {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Top left logo */
+.register-header {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+/* Top right nav */
+.register-nav {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 2;
+}
+.register-nav .active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* Centered white card - match login style */
+.register-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  max-width: 320px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #e5e7eb;
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
+  min-height: unset;
+  height: auto;
+  justify-content: center;
+}
+
+.register-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.register-desc {
+  color: #7b7b8b;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.register-input-group {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f7fafd;
+  color: #1e293b;
+  box-shadow: 0 1px 2px rgba(31,38,135,0.03);
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+.register-input:focus {
+  box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+}
+
+.register-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.10);
+  transition: background 0.2s;
+}
+.register-btn:hover {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+}
+.register-card {
+  background: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  border-radius: 18px; /* Rounded corners for card shape */
+  width: 420px;
+  padding: 48px 36px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  border: 1.5px solid #e5e7eb;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.register-card:hover {
+  box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.22);
+  border: 1.5px solid #2563eb;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-input-group {
+  position: relative;
+  width: 100%;
+}
+
+.register-input {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  border: 2px solid #222;
+  border-radius: 0;
+  font-size: 1rem;
+  color: #222;
+  background: #f7f7f7;
+  outline: none;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.register-input:focus {
+  border-color: #2563eb;
+}
+.register-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #222;
+  opacity: 0.7;
+}
+.register-input-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.register-checkbox {
+  accent-color: #111;
+  margin-right: 6px;
+}
+.register-link {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  padding: 14px 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register-btn:hover {
+  background: #222;
+}
+
+.register-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+}
+.register-footer .register-link {
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    width: 98vw;
+    padding: 24px 4vw 24px 4vw;
+  }
+  .register-header {
+    left: 18px;
+    font-size: 1.2rem;
+    top: 18px;
+  }
+  .register-nav {
+    right: 18px;
+    top: 18px;
+    gap: 18px;
+    font-size: 0.95rem;
+  }
+}

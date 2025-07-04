@@ -1,0 +1,48 @@
+# Global ignores for all environments and subfolders
+
+# Node.js
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build output
+build/
+dist/
+dist-ssr/
+
+# AI Agent
+apps/ai-agent/.env
+apps/ai-agent/venv/
+apps/ai-agent/__pycache__/
+
+# Backend
+apps/backend/node_modules/
+apps/backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/build/
+frontend/dist/
